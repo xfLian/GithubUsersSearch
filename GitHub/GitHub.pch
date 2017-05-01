@@ -1,0 +1,38 @@
+
+//
+//  GitHub.pch
+//  GitHub
+//
+//  Created by xf_Lian on 2017/4/29.
+//  Copyright © 2017年 xf_Lian. All rights reserved.
+//
+
+#ifndef GitHub_pch
+#define GitHub_pch
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+
+#import "AFNetworking.h"
+#import "HttpTool.h"
+#import "HttpToolForCell.h"
+#import "UIView+SetRect.h"
+#import "UIImageView+WebCache.h"
+#import "DownloadImage.h"
+
+#define View_Width  [UIScreen mainScreen].bounds.size.width
+#define View_Height [UIScreen mainScreen].bounds.size.height
+
+#define GitHub_Token @"3ad0524a84b1d4593eac43bc31128561c32ebb9a"
+
+//  RGB颜色
+#define Color(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+//  割线颜色
+#define LineColor Color(220, 220, 220)
+
+#endif
+
+#endif /* GitHub_pch */
